@@ -4,7 +4,7 @@
 # @Email: 834628301@qq.com
 # @File: Test_LeetCode.py
 
-from ..source_code.LeetCode2535_DifferenceBetweenElementSumAndDigitSumOfAnArray import Solution
+from ..source_code.LeetCode2520_CountTheDigitsThatDivideANumber import Solution
 
 
 class Test_LeetCode(Solution):
@@ -16,6 +16,6 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        nums = [1, 15, 6, 3]
-        assert self.differenceOfSumV1(nums) == 9;
-        assert self.differenceOfSumV2(nums) == 9;
+        num = 121
+        assert self.countDigitsV1(num) == 2;
+        assert self.countDigitsV2(num) == 2;

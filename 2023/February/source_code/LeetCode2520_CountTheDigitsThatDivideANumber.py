@@ -45,7 +45,7 @@ class Solution:
         return len(list(filter(lambda x: num % int(x) == 0, list(str(num)))))
 
 
-    def countDigits(self, num: int) -> int:
+    def countDigitsV2(self, num: int) -> int:
         count = 0
         cnum = num
         while num != 0:
