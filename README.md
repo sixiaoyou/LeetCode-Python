@@ -4,7 +4,6 @@
 
 This repository is created to record the 【source code & test case】 when You learn algorithm by Python in LeetCode.
 
----
 
 ## Note
 
