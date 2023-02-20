@@ -3,8 +3,7 @@
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: Test_LeetCode.py
-
-from ..source_code.LeetCode2520_CountTheDigitsThatDivideANumber import Solution
+from source_code.SourceCode_2023.February.LeetCode2520_CountTheDigitsThatDivideANumber import Solution
 
 
 class Test_LeetCode(Solution):
