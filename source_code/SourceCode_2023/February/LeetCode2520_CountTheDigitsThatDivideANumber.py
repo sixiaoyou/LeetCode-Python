@@ -36,7 +36,6 @@ Constraints:
 num does not contain 0 as one of its digits.
 
 '''
-
 import math
 
 

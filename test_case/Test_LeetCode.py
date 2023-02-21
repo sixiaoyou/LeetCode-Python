@@ -6,10 +6,9 @@
 
 '''
 Note:
-Test source_code/SourceCode_2023/February/LeetCode2520_CountTheDigitsThatDivideANumber
+Test source_code/SourceCode_2023/February/LeetCode2037_MinimumNumberOfMovesToSeatEveryone
 '''
-
-from source_code.SourceCode_2023.February.LeetCode2520_CountTheDigitsThatDivideANumber import Solution
+from source_code.SourceCode_2023.February.LeetCode2037_MinimumNumberOfMovesToSeatEveryone import Solution
 
 
 class Test_LeetCode(Solution):
@@ -21,6 +20,7 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        num = 121
-        assert self.countDigitsV1(num) == 2;
-        assert self.countDigitsV2(num) == 2;
+        a = [12, 14, 19, 19, 12]
+        b = [19, 2, 17, 20, 7]
+
+        assert self.minMovesToSeat(a, b) == 19;
