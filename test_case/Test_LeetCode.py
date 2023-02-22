@@ -6,9 +6,10 @@
 
 '''
 Note:
-Test source_code/SourceCode_2023/February/LeetCode2037_MinimumNumberOfMovesToSeatEveryone
+Test source_code/SourceCode_2023/February/LeetCode2553_SeparateTheDigitsInAnArray
 '''
-from source_code.SourceCode_2023.February.LeetCode2037_MinimumNumberOfMovesToSeatEveryone import Solution
+
+from source_code.SourceCode_2023.February.LeetCode2553_SeparateTheDigitsInAnArray import Solution
 
 
 class Test_LeetCode(Solution):
@@ -20,7 +21,8 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        a = [12, 14, 19, 19, 12]
-        b = [19, 2, 17, 20, 7]
+        a = [13, 25, 83, 77]
+        b = [1, 3, 2, 5, 8, 3, 7, 7]
 
-        assert self.minMovesToSeat(a, b) == 19;
+        assert self.separateDigitsV1(a) == b
+        assert self.separateDigitsV2(a) == b
