@@ -6,10 +6,10 @@
 
 '''
 Note:
-Test source_code/SourceCode_2023/February/LeetCode2500_DeleteGreatestValueInEachRow
+Test source_code/SourceCode_2023/February/LeetCode2220_MinimumBitFlipsToConvertNumber
 '''
 
-from source_code.SourceCode_2023.February.LeetCode2500_DeleteGreatestValueInEachRow import Solution
+from source_code.SourceCode_2023.February.LeetCode2220_MinimumBitFlipsToConvertNumber import Solution
 
 
 class Test_LeetCode(Solution):
@@ -21,8 +21,7 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        grid = [[1,2,4],[3,3,1]]
-        assert self.deleteGreatestValueV1(grid) == 8
-        assert self.deleteGreatestValueV2(grid) == 8
-        assert self.deleteGreatestValueV3(grid) == 8
-        assert self.deleteGreatestValueV4(grid) == 8
+        start, goal = 10, 7
+        assert self.minBitFlipsV1(start, goal) == 3
+        assert self.minBitFlipsV2(start, goal) == 3
+        assert self.minBitFlipsV3(start, goal) == 3
