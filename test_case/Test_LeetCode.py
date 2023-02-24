@@ -6,10 +6,10 @@
 
 '''
 Note:
-Test source_code/SourceCode_2023/February/LeetCode2220_MinimumBitFlipsToConvertNumber
+Test source_code/SourceCode_2023/February/LeetCode2485_FindThePivotInteger
 '''
 
-from source_code.SourceCode_2023.February.LeetCode2220_MinimumBitFlipsToConvertNumber import Solution
+from source_code.SourceCode_2023.February.LeetCode2485_FindThePivotInteger import Solution
 
 
 class Test_LeetCode(Solution):
@@ -21,7 +21,9 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        start, goal = 10, 7
-        assert self.minBitFlipsV1(start, goal) == 3
-        assert self.minBitFlipsV2(start, goal) == 3
-        assert self.minBitFlipsV3(start, goal) == 3
+        n = 49
+        assert self.pivotIntegerV1(n) == 35
+        assert self.pivotIntegerV2(n) == 35
+        assert self.pivotIntegerV3(n) == 35
+        assert self.pivotIntegerV4(n) == 35
+        assert self.pivotIntegerV5(n) == 35
