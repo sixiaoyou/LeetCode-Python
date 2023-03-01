@@ -6,10 +6,10 @@
 
 '''
 Note:
-Test source_code/SourceCode_2023/February/LeetCode2485_FindThePivotInteger
+Test source_code/SourceCode_2023/February/LeetCode2331_EvaluateBooleanBinaryTree
 '''
-
-from source_code.SourceCode_2023.February.LeetCode2485_FindThePivotInteger import Solution
+from source_code.SourceCode_2023.February.LeetCode2331_EvaluateBooleanBinaryTree import Solution
+from source_code.common.convert_list_to_binaryTree import CreateBiTree
 
 
 class Test_LeetCode(Solution):
@@ -21,9 +21,12 @@ class Test_LeetCode(Solution):
         print("Clear test...")
 
     def test_solution(self):
-        n = 49
-        assert self.pivotIntegerV1(n) == 35
-        assert self.pivotIntegerV2(n) == 35
-        assert self.pivotIntegerV3(n) == 35
-        assert self.pivotIntegerV4(n) == 35
-        assert self.pivotIntegerV5(n) == 35
+        test_data = "213##01"
+        c = CreateBiTree(test_data)
+        root = c()
+        so = Solution()
+
+        assert so.SolutionV1().evaluateTree(root) is True
+        assert so.SolutionV2().evaluateTree(root) is True
+        assert so.SolutionV3().evaluateTree(root) is True
+        assert so.SolutionV4().evaluateTree(root) is True
