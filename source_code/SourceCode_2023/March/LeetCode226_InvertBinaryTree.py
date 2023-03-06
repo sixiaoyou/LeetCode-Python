@@ -48,24 +48,19 @@ class Solution:
         if root is None:
             return None
 
-        dq = deque()
-        dq.append(root)
-        iroot = copy.deepcopy(dq[0])
-        flag = True
+        stack = []
+        stack.append(root)
+        iroot = root
 
-        while dq:
-            if flag:
-                iroot = dq[0]
-                flag = False
-
-            root = dq.pop()
+        while stack:
+            root = stack.pop()
             root.left, root.right = root.right, root.left
 
             if root.left:
-                dq.append(root.left)
+                stack.append(root.left)
 
             if root.right:
-                dq.append(root.right)
+                stack.append(root.right)
 
         return iroot
 
