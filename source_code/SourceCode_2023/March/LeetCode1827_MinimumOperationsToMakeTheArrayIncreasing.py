@@ -2,7 +2,7 @@
 # @Time  :2023/3/20 13:15
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
-# @File: Leetcode1827_MinimumOperationsToMakeTheArrayIncreasing.py
+# @File: LeetCode1827_MinimumOperationsToMakeTheArrayIncreasing.py
 
 
 '''
