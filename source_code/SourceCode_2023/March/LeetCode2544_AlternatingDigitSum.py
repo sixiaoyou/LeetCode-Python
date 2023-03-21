@@ -3,8 +3,6 @@
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: LeetCode2544_AlternatingDigitSum.py
-
-
 '''
 [LeetCode2544. Alternating Digit Sum]
 You are given a positive integer n. Each digit of n has a sign according to the following rules:
@@ -50,3 +48,5 @@ class Solution:
             iflag *= -1
 
         return res
+
+
