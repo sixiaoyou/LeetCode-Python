@@ -1,2 +1,2 @@
 # LeetCode-Python
-Record the Python Code by the LeetCode.
+Record Python code by the LeetCode.
