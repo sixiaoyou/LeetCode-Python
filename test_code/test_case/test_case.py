@@ -1,26 +1,24 @@
 from test_code.test_data.test_data import Test_Data as td
-from source_code.SourceCode_2023.May import LeetCode_PalindromePermutationLCCI as l
+from source_code.SourceCode_2023.May import LeetCode1122_RelativeSortArray as l
 
 
 class TestCase:
 
     def test_leetcode(self):
-        tdl= td().GenTestData()
-        expect_result = [True, False, True, False]
-        # expect_result = [True]
-        # expect_result = [False]
+        t = td.GenTestData(self)
+        r = []
+        for i in t:
+            r.append(l.Solution().relativeSortArray(i[0], i[1]))
 
-        t = l.Solution()
-        res = []
+        expect1 = [2,2,2,1,4,3,3,9,6,7,19]
+        expect2 = [22,28,8,6,17,44]
 
-        for i in range(len(tdl)):
-            tmp = t.canPermutePalindrome(tdl[i])
-            if tmp != expect_result[i]:
-                print(f"source_data: {tdl[i]}, real_result: {tmp}, expect_result: {expect_result[i]}")
-            res.append(tmp)
+        expect = [expect1, expect2]
 
-        return res == expect_result
-
+        for j in range(len(r)):
+            if r[j] != expect[j]:
+                print(r[j])
+        return r == expect
 
 res = TestCase()
 print(res.test_leetcode())
