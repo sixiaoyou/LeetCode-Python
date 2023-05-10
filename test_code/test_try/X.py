@@ -12,14 +12,6 @@ class X:
 
     def test_explore(self):
 
-        a = [1,2,3]
-        b = [2,3,1]
-
-        l = len(b)
-        rank = {x: i - l for i, x in enumerate(b)}
-        print(rank)
-        a.sort(key = self.cmp(rank, a))
-        print(a)
 
 x = X()
 x.test_explore()

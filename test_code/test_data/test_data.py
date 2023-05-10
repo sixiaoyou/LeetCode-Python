@@ -9,7 +9,7 @@ import collections
 class Test_Data:
 
     def GenTestData(self):
-        arr1 = [[2,3,1,3,2,4,6,7,9,2,19], [2,1,4,3,9,6]]
-        arr2 = [[28,6,22,8,44,17], [22,28,8,6]]
+        test_data = ["?5:00", "0?:0?", "??:??", "2?:??", "??:2?", "07:?3", "?4:22"]
+        # test_data = ["?5:00", "0?:0?"]
 
-        return arr1, arr2
+        return test_data
