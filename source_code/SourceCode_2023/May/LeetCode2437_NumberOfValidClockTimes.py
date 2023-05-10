@@ -5,7 +5,7 @@
 # @File: LeetCode2437_NumberOfValidClockTimes.py
 
 '''
-[2437. Number of Valid Clock Times]s
+[2437. Number of Valid Clock Times]
 You are given a string of length 5 called time, representing the current time on a digital clock in the format "hh:mm". The earliest possible time is "00:00" and the latest possible time is "23:59".
 
 In the string time, the digits represented by the ? symbol are unknown, and must be replaced with a digit from 0 to 9.
