@@ -1,5 +1,5 @@
 from test_code.test_data.test_data import Test_Data as td
-from source_code.SourceCode_2023.May import LeetCode2437_NumberOfValidClockTimes as l
+from source_code.SourceCode_2023.May import LeetCode2418_SortThePeople as l
 
 
 class TestCase:
@@ -8,10 +8,11 @@ class TestCase:
         t = td.GenTestData(self)
         r = []
         for i in t:
-            r.append(l.Solution().countTime(i))
+            r.append(l.Solution().sortPeople(i))
 
-        expect = [2, 100, 1440, 240, 240, 6, 2]
-        # expect = [2, 100]
+        expect1 = ["Mary","Emma","John"]
+        expect2 = ["Bob","Alice","Bob"]
+        expect = [expect1, expect2]
         print(r)
 
         for j in range(len(r)):

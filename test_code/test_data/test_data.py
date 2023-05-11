@@ -9,7 +9,15 @@ import collections
 class Test_Data:
 
     def GenTestData(self):
-        test_data = ["?5:00", "0?:0?", "??:??", "2?:??", "??:2?", "07:?3", "?4:22"]
-        # test_data = ["?5:00", "0?:0?"]
+        names1 =  ["Mary","John","Emma"]
+        heights1 = [180,165,170]
 
-        return test_data
+        names2 = ["Alice","Bob","Bob"]
+        heights2 = [155,185,150]
+
+        l1 = [names1, heights1]
+        l2 = [names2, heights2]
+
+        l = [l1, l2]
+
+        return l
