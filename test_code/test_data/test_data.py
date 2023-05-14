@@ -9,15 +9,11 @@ import collections
 class Test_Data:
 
     def GenTestData(self):
-        names1 =  ["Mary","John","Emma"]
-        heights1 = [180,165,170]
+        t1 = [1, 2, 0, 0]
+        t2 = [2, 2, 0, 1]
+        t3 = [2, 3, 1, 2]
+        t4 = [100, 100, 14, 68]
 
-        names2 = ["Alice","Bob","Bob"]
-        heights2 = [155,185,150]
-
-        l1 = [names1, heights1]
-        l2 = [names2, heights2]
-
-        l = [l1, l2]
-
-        return l
+        t = [t1, t2, t3]
+        t = [t4]
+        return t

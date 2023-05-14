@@ -1,5 +1,7 @@
+import time
+
 from test_code.test_data.test_data import Test_Data as td
-from source_code.SourceCode_2023.May import LeetCode2418_SortThePeople as l
+from source_code.SourceCode_2023.May import LeetCode1030_MatrixCellsInDistanceOrder as l
 
 
 class TestCase:
@@ -8,17 +10,22 @@ class TestCase:
         t = td.GenTestData(self)
         r = []
         for i in t:
-            r.append(l.Solution().sortPeople(i))
+            r.append(l.Solution().allCellsDistOrder(i[0], i[1], i[2], i[3]))
 
-        expect1 = ["Mary","Emma","John"]
-        expect2 = ["Bob","Alice","Bob"]
-        expect = [expect1, expect2]
-        print(r)
+        expect1 = [[0,0],[0,1]]
+        expect2 = [[0,1],[0,0],[1,1],[1,0]]
+        expect3 = [[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]
+        # expect = [expect1, expect2,expect3]
+        expect = [expect3]
+        # print(r)
 
         for j in range(len(r)):
-            if r[j] != expect[j]:
-                print(r[j])
+            print(r[j])
+            # if r[j] != expect[j]:
+            #     print(r[j])
         return r == expect
 
+start = time.time()
 res = TestCase()
-print(res.test_leetcode())
+res.test_leetcode()
+print(time.time() - start)
