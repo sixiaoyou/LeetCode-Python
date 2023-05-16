@@ -3,12 +3,18 @@
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: X.py
-import collections
-from functools import cmp_to_key
+
+import numpy
+
+
 
 class X:
     def test_explore(self):
-        pass
+        a = [1, 2]
+        b = [3, 2]
+
+
+        print(list(a & b))
 
 
 x = X()
