@@ -10,7 +10,12 @@ import numpy
 
 class X:
         def test_explore(self):
-            print(chr(ord('c') - 32))
+            d = {}
+            d[0] = 1
+            d[1] = 2
+            d[2] = 3
+
+            return max(d.values())
 
 
 x = X()
