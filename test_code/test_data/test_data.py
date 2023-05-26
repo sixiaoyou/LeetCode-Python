@@ -9,19 +9,12 @@ import collections
 class Test_Data:
 
     def GenTestData(self):
-        t1 = [-1,0,3,5,9,12]
-        t2 = [-1,0,3,5,9,12]
-        t3 = [5]
-        t4 = [-1,0,3,5,9,12]
+        t1 = "ababa"
+        t2 = "abb"
+        t3 = "baabb"
+        t4 = "baabbbbbb"
 
-        l1 = [t1, 9]
-        l2 = [t2, 2]
-        l3 = [t3, 5]
-        l4 = [t4, 0]
-
-        t = [l1, l2, l3, l4]
-        # t = [t3]
+        t = [t1, t2, t3, t4]
+        # t = [t4]
         return t
 
-a = Test_Data()
-print(a.GenTestData())

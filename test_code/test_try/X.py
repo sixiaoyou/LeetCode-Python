@@ -10,12 +10,11 @@ import numpy
 
 class X:
         def test_explore(self):
-            d = {}
-            d[0] = 1
-            d[1] = 2
-            d[2] = 3
+            a = 'aaaa'
+            a = a[:-1]
+            a = a[:-1]
+            print(a)
 
-            return max(d.values())
 
 
 x = X()
