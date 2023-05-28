@@ -10,12 +10,9 @@ import numpy
 
 class X:
         def test_explore(self):
-            a = 'aaaa'
-            a = a[:-1]
-            a = a[:-1]
-            print(a)
-
-
+          s = 'abcbac'
+          for i, j in enumerate(s):
+              print(int('a') - 97)
 
 x = X()
 print(x.test_explore())
