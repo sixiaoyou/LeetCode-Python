@@ -1,5 +1,5 @@
 # -*-coding: utf-8-*-
-# @Time  :2023/6/1 8:11
+# @Time  :2023/6/1 15:00
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: LeetCode2399_CheckDistancesBetweenSameLetters.py
