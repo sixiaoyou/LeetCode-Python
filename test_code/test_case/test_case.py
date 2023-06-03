@@ -17,12 +17,15 @@ class TestCase:
         expect3 = 1
         expect4 = 11
         expect5 = 3
+
         expect = [expect1, expect2, expect3, expect4, expect5]
         print(r)
 
         for j in range(len(r)):
-            if r[j] != expect[j]:
-                print(r[j])
+            # if r[j] != expect[j]:
+            #     print(r[j])
+            pass
+
         return r == expect
 
 

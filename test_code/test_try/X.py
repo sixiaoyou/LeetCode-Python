@@ -7,10 +7,11 @@
 
 class X:
         def test_explore(self):
-            a = [0, 1]
-            print(a[::-1])
+            l1 = [1, 2, 3]
+            l2 = [4, 5, 6]
 
-
+            for i,j in zip(l1, l2):
+                print(i, j)
 
 x = X()
 print(x.test_explore())
