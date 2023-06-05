@@ -3,15 +3,17 @@
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: X.py
+import collections
 
 
 class X:
         def test_explore(self):
-            l1 = [1, 2, 3]
-            l2 = [4, 5, 6]
+            d = collections.defaultdict(list)
+            for i,j in [[1,2],[1,0],[1,3]]:
+                d[i].append(j)
+            print(d)
 
-            for i,j in zip(l1, l2):
-                print(i, j)
+
 
 x = X()
 print(x.test_explore())
