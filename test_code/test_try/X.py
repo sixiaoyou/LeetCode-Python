@@ -8,10 +8,10 @@ import collections
 
 class X:
         def test_explore(self):
-            d = collections.defaultdict(list)
-            for i,j in [[1,2],[1,0],[1,3]]:
-                d[i].append(j)
-            print(d)
+            ls, res = ["abjfedid"],[]
+            for i in ls:
+                res.append(sum(map(lambda x: ord(x) - 97, list(i))))
+            print(res)
 
 
 
