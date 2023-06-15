@@ -9,11 +9,14 @@ import time
 
 class X:
         def test_explore(self):
-            m = {1,2}
-            print(m.add(2))
+            s = ''
+            for i in range(100000):
+                s += str(i)
+            return s
 
 
 
-
+start = time.time()
 x = X()
 x.test_explore()
+print(time.time() - start)
