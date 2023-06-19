@@ -1,3 +1,10 @@
+# -*-coding: utf-8-*-
+# @Time  :2023/6/19 14:29
+# @Author: sixiaoyou
+# @Email: 834628301@qq.com
+# @File: LeetCode2737_FindTheClosestMarkedNode.py.py
+
+
 '''
 [2737. Find the Closest Marked Node]
 You are given a positive integer n which is the number of nodes of a 0-indexed directed weighted graph and a 0-indexed 2D array edges where edges[i] = [ui, vi, wi] indicates that there is an edge from node ui to node vi with weight wi.
