@@ -12,7 +12,9 @@ import heapq
 from collections import defaultdict
 class X:
         def test_explore(self, n):
-            pass
+            s = "cba"
+            s = sorted(s, key = lambda x: ord(x))
+            print(s)
 
 
 n = 500
