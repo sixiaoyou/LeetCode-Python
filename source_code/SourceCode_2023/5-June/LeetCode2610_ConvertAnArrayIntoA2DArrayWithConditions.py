@@ -1,5 +1,5 @@
 # -*-coding: utf-8-*-
-# @Time  :2023/6/20 20:57
+# @Time  :2023/6/21 09:00
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: LeetCode2610_ConvertAnArrayIntoA2DArrayWithConditions.py
