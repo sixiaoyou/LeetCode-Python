@@ -3,22 +3,20 @@
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: X.py
-
-
 import collections
+from collections import Counter
 import time
 import heapq
 
-from collections import defaultdict
 class X:
-        def test_explore(self, n):
-            s = "cba"
-            s = sorted(s, key = lambda x: ord(x))
-            print(s)
+        def test_explore(self, nums):
+           while nums:
+               nums.remove(0)
 
 
-n = 500
+
+nums = [0] * 20000000
 start = time.time()
 x = X()
-x.test_explore(n)
+x.test_explore(nums)
 print(time.time() - start)
