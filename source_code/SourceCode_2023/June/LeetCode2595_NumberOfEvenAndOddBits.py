@@ -1,5 +1,5 @@
 # -*-coding: utf-8-*-
-# @Time  :2023/6/25 6:34
+# @Time  :2023/6/25 00:00
 # @Author: sixiaoyou
 # @Email: 834628301@qq.com
 # @File: LeetCode2595_NumberOfEvenAndOddBits.py
