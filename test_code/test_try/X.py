@@ -7,16 +7,16 @@ import collections
 from collections import Counter
 import time
 import heapq
+from queue import PriorityQueue
+
 
 class X:
-        def test_explore(self, nums):
-           while nums:
-               nums.remove(0)
-
-
-
-nums = [0] * 20000000
+    def test_explore(self, nums):
+        pass
+nums = [1, 2, 3]
+expect = [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
 start = time.time()
 x = X()
-x.test_explore(nums)
+res = x.test_explore(nums)
+print(res == expect)
 print(time.time() - start)
