@@ -1,26 +1,22 @@
-import time
-
 from test_code.test_data.test_data import Test_Data as td
-from source_code.SourceCode_2023.June import LeetCode1991_FindTheMiddleIndexInArray as l
+from source_code.SourceCode_2023.July import LeetCode1255_MaximumScoreWordsFormedByLetters as l
 
 
 class TestCase:
 
     def test_leetcode(self):
-        expect1 = 3
-        expect2 = 2
-        expect3 = -1
-        expect4 = 0
-        expect5 = 1
-        expect6 = 1
-
-        expect = [expect1, expect2, expect3, expect4, expect5, expect6]
-        expect = [expect6]
+        expect1 = 23
+        expect2 = 27
+        expect3 = 0
+        expect4 = 51
+        expect5 = 49
+        expect = [expect1, expect2, expect3, expect4, expect5]
+        # expect = [expect5]
 
         t = td.GenTestData(self)
         r = []
-        for i in range(len(t)):
-            r.append(l.Solution().findMiddleIndex(t[i]))
+        for i in t:
+            r.append(l.Solution().maxScoreWords(i[0], i[1], i[2]))
 
         print(f'real: {r}, expect:{expect}')
 

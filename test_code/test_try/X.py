@@ -6,17 +6,35 @@
 import collections
 from collections import Counter
 import time
-import heapq
-from queue import PriorityQueue
+from collections import Counter
 
 
 class X:
-    def test_explore(self, nums):
-        pass
-nums = [1, 2, 3]
-expect = [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
+    def test_explore(self):
+        a = set()
+        a.add(1)
+        a.add(2)
+        a.add(3)
+        b = set()
+        b.add(10)
+        a.remove(1)
+
+a = X()
+print(a.test_explore())
+
+
+
+
+
+
+
+
+
+
+nums =  ["a", "a", "c", "d", "d", "d", "g", "o", "o"]
+
 start = time.time()
 x = X()
 res = x.test_explore(nums)
-print(res == expect)
+print(res)
 print(time.time() - start)
